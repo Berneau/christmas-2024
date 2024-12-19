@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* Colors */
+:root {
+  --polished-mahogany: #43291f;
+  --white-pepper: #f4f0bb;
+  --poppy-red: #da2c38;
+  --sparkling-emerald: #226f54;
+  --atomic-tangerine: #f19c79;
+  --pistachio: #87c38f;
+  --platinum: #DCDFE5;
+  --chestnut: #934e39;
+}
+
+/* Font */
+@font-face {
+  font-family: 'Menlo';
+  src: url('assets/Menlo-Regular.ttf');
+  font-weight: normal;
+}
+
+/* Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--polished-mahogany);
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
+  -webkit-font-smoothing: antialiased;
+  color: var(--white-pepper);
+  justify-content: center;
+  font-family: 'Menlo';
+  align-items: center;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 0 1rem;
+  display: flex;
+  height: 100vh;
+}
+
+.comment {
+  color: var(--chestnut);
+}
+
+.method-name {
+  color: var(--poppy-red);
+}
+
+.string {
+  color: var(--pistachio)
+}
+
+.keyword {
+  color: var(--sparkling-emerald);
+}
+
+.other {
+  color: var(--platinum);
+}
+
+.indent-1 {
+  padding-left: 3rem;
+}
+
+.indent-2 {
+  padding-left: 6rem;
+}
